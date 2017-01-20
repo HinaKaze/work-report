@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Work report</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="impress">
+        <div id="title" class="step" data-x="0" data-scale="1">
+            <h1 class="title">Work report</h1>
+        </div>
+        <div id="go" class="step slide" data-x="-1000" data-y="-1000">
+            <h1>GO</h1>
+            <ul>
+                <li>语法</li>
+                <li>并发编程</li>
+                <li>测试用例</li>
+                <li>性能分析</li>
+            </ul>
+        </div>
+        <div id="mqtt" class="step slide" data-x="1000" data-y="-1000">
+            <h1>MQTT</h1>
+            <ul>
+                <li>理解规范</li>
+                <li>用途/模式</li>
+                <li>业务调用</li>
+            </ul>
+        </div>
+        <div id="postgres" class="step slide" data-x="-1000" data-y="1000">
+            <h1>POSTGRESQL</h1>
+            <ul>
+                <li>基础部署/管理</li>
+                <li>SQL标准理解</li>
+                <li>常用数据类型</li>
+                <li>业务调用</li>
+            </ul>
+        </div>
+        <div id="iota-scheudler" class="step slide" data-x="1000" data-y="1000">
+            <h1>IOTA-TSC</h1>
+            <ul>
+            <li>Task Schedule Center</li>
+            <li>对结构物dimension调度，scheme调度时机，dimCap调度对象</li>
+            </ul>
+        </div>
+        <div class="step" data-x="1000" data-y="3000" data-rotate="90">
+            <div class="title">Features</div>
+            <ul>
+                <li>dimension --> schedule转换器(Repeat模式)</li>
+                <li>event(start,pause,resume,shutdown)处理</li>
+                <li>并发调度和串行调度</li>
+                <li>DeviceInterface并发能力控制</li>
+                <li>监听Thing更新</li>
+                <li>监听DimCapDriver处理阶段变化(监测/恢复用)</li>
+                <li>日志写入(未做)</li>
+                <li>硬关闭后的恢复能力(未做完)</li>
+            </ul>
+        </div>
+        <div class="step" data-x="1000" data-y="5000" data-rotate="90" data-scale="1" data-width="1500">
+            <div class="title">类关系图</div>
+        </div>
+        <div class="step" data-x="1000" data-y="5000" data-rotate="90" data-scale="1" data-rotate-y="90">
+            <a href="img/class_diagram.png" target="_blank">
+                <div class-diagram class="image"></div>
+            </a>
+        </div>
+        <div class="step" data-x="1000" data-y="7000" data-rotate="90" data-scale="1">
+            <h1 class="title">Use case</h1>
+                <pre>
+    import "iota/scheduler/thing"
+    s := thing.NewThingScheduleService(thingGetter ThingsGetter, dcDriver DimCapDriver)
+    s.Start()
+    s.Pause()
+    s.Resume()
+    s.Shutdown()
+    s.GetSchedulers()</pre>
+        </div>
+        <div class="step" data-x="1000" data-y="9000" data-rotate="90" data-scale="1">
+            <h1 class="title">增强cron</h1>
+            <ul>
+                <li>基于robfig/cron <a href="https://github.com/robfig/cron">cron</a> a cron library for go</li>
+                <li>支持@now == @every 1s,立即执行</li>
+                <li>支持@every {n}M,月份的interval支持</li>
+            </ul>
+        </div>
+        <div id="back-title" class="step" data-x="0" data-scale="2">
+        </div>
+        <div id="future" class="step slide" data-z="3000" data-rotate-y="90">
+            <div class="title">In the future</div>
+            <ul>
+                <li>1.云平台顺利上线</li>
+                <li>2.数据库、数据一致性、数据备份</li>
+                <li>3.掌握/改良各种轮子提高工作效率</li>
+                <li>4.系统层级调优</li>
+                <li>5.掌握各种分布式模型</li>
+                <li>6.掌握一门新后端语言</li>
+            </ul>
+        </div>
+        <div id="end" class="step" data-x="-10000" data-z="3000" data-rotate-y="90">
+            <div class="title">Thank you!</div>
+        </div>
+    </div>
+    <script src="js/impress.js"></script>
+    <script>
+    impress().init();
+    </script>
+</body>
+
+</html>

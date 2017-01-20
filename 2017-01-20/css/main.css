@@ -1,0 +1,74 @@
+body{
+	font-family: "Open Sans";
+	background-color: #eee;
+}
+
+li{
+	list-style: none;
+	font-size: 32px;
+}
+
+a{
+	text-decoration: none;
+}
+
+li:before{
+	content:"● ";
+	color:#777;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	font-size: 20px;
+	vertical-align: center;
+}
+
+pre{
+	font-size: 30px;
+	font-family: "consolas";
+	background-color: rgba(255,255,255,0.8);
+	padding: 10px 10px;
+}
+
+.title{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	font-size: 64px;
+	text-align: center;
+	color: #333;
+}
+.image{
+	display: block;
+	margin: 50px 50px;
+	width: 1920px;
+	height: 1080px;
+}
+
+.image[class-diagram]{
+	display: block;
+	margin:100px 50px;
+	background: url("../img/class_diagram.png");
+	background-size: 1920px 1080px;
+}
+
+
+.slide{
+	display: block;
+
+	width: 1000px;
+	height: 600px;
+	padding: 10px 60px;
+
+	border: 2px solid rgb(102,102,102);
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	background-color: #fff;
+
+	color: rgb(102,102,102);
+	text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+	font-size: 30px;
+}
+
+.slide > h1{
+	text-align: center;
+}
