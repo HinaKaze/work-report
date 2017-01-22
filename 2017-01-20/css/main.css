@@ -43,13 +43,27 @@ pre{
 	height: 1080px;
 }
 
+.image[usecase-diagram]{
+	display: block;
+	margin:100px 50px;
+	background: url("../img/usecase_diagram.png");
+	background-size: 1600px 900px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .image[class-diagram]{
 	display: block;
 	margin:100px 50px;
 	background: url("../img/class_diagram.png");
 	background-size: 1920px 1080px;
 }
-
+.image[sequence-diagram]{
+	display: block;
+	margin:100px 50px;
+	background: url("../img/sequence_diagram.png");
+	background-size: 1920px 1080px;
+}
 
 .slide{
 	display: block;
