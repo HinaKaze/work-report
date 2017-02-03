@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The plan of 2017</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var i = 1;
+        $("li p").each(function() {
+            console.log($(this).html())
+            $(this).text(i + " . " + $(this).text())
+            i++;
+        });
+    });
+    </script>
+    <style type="text/css">
+    body {
+        font-family: 'Open Sans'
+    }
+    
+    h1 {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        text-align: center;
+        list-style: none;
+    }
+    
+    p {
+        display: inline-block;
+        text-align: left;
+        width: 500px;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>The Plan of 2017</h1>
+        <ul>
+            <li>
+                <p>Pass the N3 of Nihongo</p>
+            </li>
+            <li>
+                <p>Pass the master degree entrance examination</p>
+            </li>
+            <li>
+                <p>Public noro project</p>
+            </li>
+            <li>
+                <p>Learn Marchine learning and deep learning</p>
+            </li>
+            <li>
+                <p>Write at least 25 high quality blog</p>
+            </li>
+            <li>
+                <p>IoT platform success</p>
+            </li>
+            <li>
+                <p>Well know C++ project</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
