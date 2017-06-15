@@ -1,0 +1,19 @@
+写于 2017/06/15
+
+TSC ：
+1. 事件触发方式
+2. QoS的支持
+3. retry、timeout、fuse 参数调优
+
+ACCESS：
+1. 接口并发资源控制
+2. 连接池参数调优
+3. 更多交互模式方式支持
+4. ConnDriver 必要property须在web 配置处体现
+
+EVENT：
+1. 实现外部临时任务的事件Handler
+
+Script：
+1. 非Function粒度的测试支持
+2. 安全控制
